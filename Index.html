@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Scary Halloween Party</title>
+        <link rel="stylesheet" href="Estilos halloween/estalo.css">
+
+        <script src="funcialo/funha.js"></script>
+    </head>
+    <body onload="sonar('lluvia')">
+        <audio id="gruñido" >
+            <source src="grititos2/Monster Growl-SoundBible.com-344645592.mp3" type="audio/mpeg">
+        </audio> 
+        <audio id="lluvia" >
+                <source src="grititos2/heavy-rain-daniel_simon.mp3" type="audio/mpeg">
+            </audio> 
+        <div id="wrapper">
+            <h1 id="titulo">Scary Halloween Party</h1>
+            <p id="p1">Cuidao con el solitario</p>
+            <div id="bat" onclick="mostrar('zombie'); sonar('gruñido')"></div>
+            <div id="puerta" onclick=""></div>
+            <img id="zombie" onclick="esconder('zombie'); parar('gruñido')" src="Imágenes/Sombi.gif" height="70">
+        </div>
+    </body>
+</html>
