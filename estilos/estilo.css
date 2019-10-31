@@ -28,12 +28,12 @@ body{
     margin-left: 65px;
 }
 #titulo{
-    font-size: 400% ;
+    font-size: 300% ;
     position: absolute;
-    top: 10px;
-    left: 105px;
+    top: 20px;
+    left: 125px;
     font-family: Swamp Witch;
-    color: slategray;
+    color: slateblue;
 }
 #p1{
     font-size: 200%;
@@ -41,13 +41,22 @@ body{
     top: 250px;
     left: 900px;
     font-family: Swamp Witch;
-    color: slategray;
+    color: slateblue;
 }
 #p2{
     font-size: 500%;
     position: absolute;
     top: 200px;
     left: 800px;
+    font-family: Swamp Witch;
+    color: red;
+    visibility: hidden;
+}
+#p5{
+    font-size: 500%;
+    position: absolute;
+    top: 200px;
+    left: 400px;
     font-family: Swamp Witch;
     color: red;
     visibility: hidden;
@@ -102,6 +111,14 @@ body{
     left: 1040px;
     cursor: pointer;
 }
+#col {
+    width: 70px;
+    height: 55px;
+    position: absolute;
+    top: 280px;
+    left: 320px;
+    cursor: pointer;
+}
 #pumpkin {
     /*border: 1px solid white;*/
     width: 130px;
@@ -136,10 +153,17 @@ body{
     visibility: hidden;
     cursor: pointer;
 }
-#ghost{                
+#muerte{                
     position: absolute;
     top: 200px;
-    left: 200px;
+    left: 50px;
+    visibility: hidden;
+    cursor: pointer;
+}
+#ghost{                
+    position: absolute;
+    top: 250px;
+    left: 250px;
     visibility: hidden;
     cursor: pointer;
 }

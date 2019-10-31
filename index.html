@@ -5,24 +5,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Scary Halloween Party</title>
-        <link rel="stylesheet" href="../Halloween/estilos /estilo.css">
+        <link rel="stylesheet" href="../Halloween/estilos/estilo.css">
 
         <script src="javascript/funciones.js"></script>
     </head>
-    <body onload="sonar('lluvia')">
-        <audio id="gruñido" >
-            <source src="grititos2/Monster Growl-SoundBible.com-344645592.mp3" type="audio/mpeg">
+    <body onload="sonar('fondo')">
+        <audio id="andanza" >
+            <source src="../Halloween/grititos2/walkandgrunt.mp3" type="audio/mpeg">
         </audio> 
-        <audio id="lluvia" >
-                <source src="grititos2/heavy-rain-daniel_simon.mp3" type="audio/mpeg">
+        <audio id="grito" >
+            <source src="../Halloween/grititos2/Scary Scream-SoundBible.com-1115384336.mp3" type="audio/mpeg">
+        </audio> 
+        <audio id="fondo" >
+            <source src="../Halloween/grititos2/radionoise.mp3" type="audio/mpeg">
         </audio> 
 
         <div id="wrapper">
             <h1 id="titulo">Scary Halloween Graveyard</h1>
             <p id="p1">Cuidado con el solitario</p>
-            <div id="bat" onclick="mostrar('zombie'); sonar('gruñido')"></div>
+            <div id="bat" onclick="mostrar('zombie'); sonar('andanza')"></div>
+            <div id="col" onclick="mostrar('muerte'); mostrar('p5'); sonar('grito')"></div>
             <a id="puerta" href="casa.html"></a>
-            <img id="zombie" onclick="esconder('zombie'); parar('gruñido')" src="imagenes/sombi.gif" height="70">
+            <p id="p5" >¡¡¡VOY A POR TIIIIII!!!</p>
+            <img id="zombie" onclick="esconder('zombie'); parar('andanza')" src="imagenes/sombi.gif" height="70">
+            <img id="muerte" onclick=" parar('grito'); esconder('muerte'); esconder('p5');" src="imagenes/muerte.png" height="500">
         </div>
     </body>
 </html>

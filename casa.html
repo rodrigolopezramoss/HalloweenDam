@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Scary halloween house</title>
-    <link rel="stylesheet" href="../Halloween/estilos /estilo.css">
+    <link rel="stylesheet" href="../Halloween/estilos/estilo.css">
 
     <script src="javascript/funciones.js"></script>
 </head>
-<body onload="sonar('lluvia')">
+<body onload="sonar('fondo')">
 
-    <audio id="lluvia" >
-            <source src="grititos2/heavy-rain-daniel_simon.mp3" type="audio/mpeg">
+    <audio id="fondo" >
+            <source src="../Halloween/grititos2/radionoise.mp3" type="audio/mpeg">
     </audio>
     <audio id="grito" >
-            <source src="grititos2/Scary Scream-SoundBible.com-1115384336.mp3" type="audio/mpeg">
+            <source src="../Halloween/grititos2/Scary Scream-SoundBible.com-1115384336.mp3" type="audio/mpeg">
         </audio> 
 
     <div id="casa">
@@ -23,10 +23,10 @@
         <p id="p2" >¡¡¡FUERA DE AQUIIIII!!!</p>
         <div id="p3" >Deberias entrar...</div>
         <div id="p4" > Je je je je ...</div>
-        <div id="door" onclick="mostrar('ghost'); mostrar('p2'); esconder('p3')"></div>
+        <div id="door" onclick="mostrar('ghost'); mostrar('p2'); esconder('p3'); sonar('grito')"></div>
         <div id="cal" onclick="mostrar('p4');"></div>
         <div id="pumpkin" onclick="mostrar('calabaza'); esconder ('p3'); esconder ('p4')"></div>
-        <img id="ghost" onclick="esconder('ghost'); esconder('p2'); parar('gruñido'); mostrar('calabaza')" src="imagenes/ghost.gif" height="400">
+        <img id="ghost" onclick="esconder('ghost'); esconder('p2'); parar('grito'); mostrar('calabaza')" src="imagenes/ghost.gif" height="400">
     </div> 
 </body>
 </html>
