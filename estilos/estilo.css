@@ -17,27 +17,81 @@ body{
     margin-top: 20px;
     margin-left: 65px;
 }
+#casa{
+    background-image: url("../imagenes/casa.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 1200px;
+    height: 700px;
+    border-radius: 100px ;
+    margin-top: 20px;
+    margin-left: 65px;
+}
 #titulo{
     font-size: 400% ;
     position: absolute;
     top: 10px;
     left: 105px;
     font-family: Swamp Witch;
+    color: slategray;
 }
 #p1{
     font-size: 200%;
     position: absolute;
-    top: 50px;
-    left: 870px;
+    top: 250px;
+    left: 900px;
     font-family: Swamp Witch;
+    color: slategray;
+}
+#p2{
+    font-size: 500%;
+    position: absolute;
+    top: 200px;
+    left: 800px;
+    font-family: Swamp Witch;
+    color: red;
+    visibility: hidden;
+}
+#p3{
+    font-size: 100%;
+    position: absolute;
+    font-size: 150%;
+    top: 500px;
+    left: 1050px;
+    font-family: Swamp Witch;
+    color:slateblue;
+}
+#p4{
+    font-size: 100%;
+    position: absolute;
+    font-size: 150%;
+    top: 330px;
+    left: 620px;
+    font-family: Swamp Witch;
+    color:slateblue;
+    visibility: hidden;
+}
+#calabaza{
+    visibility: hidden;
+    font-size: 200%;
+    position: absolute;
+    /*border: 1px solid white;*/
+    top: 550px;
+    left: 1050px;
+    font-family: Swamp Witch;
+    color: slategray;
 }
 #puerta {
-    border: 1px solid white;
-    width: 70px;
-    height: 75px;
+    background-image: url("../imagenes/puerta.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #000;
+    width: 184px;
+    height: 82px;
+    /*border: 1px solid white;*/
     position: absolute;
-    top: 450px;
-    left: 565px;
+    top: 421px;
+    left: 504px;
 }
 #bat {
     /*border: 1px solid white;*/
@@ -46,10 +100,46 @@ body{
     position: absolute;
     top: 330px;
     left: 1040px;
+    cursor: pointer;
+}
+#pumpkin {
+    /*border: 1px solid white;*/
+    width: 130px;
+    height: 95px;
+    position: absolute;
+    top: 600px;
+    left: 1055px;
+    cursor: pointer;
+}
+#cal {
+    /*border: 1px solid white;*/
+    width: 30px;
+    height: 45px;
+    position: absolute;
+    top: 370px;
+    left: 650px;
+    cursor: pointer;
+}
+#door {
+    /*border: 1px solid white;*/
+    width: 45px;
+    height: 90px;
+    position: absolute;
+    top: 500px;
+    left: 640px;
+    cursor: pointer;
 }
 #zombie{                
     position: absolute;
     top: 480px;
     left: 565px;
     visibility: hidden;
+    cursor: pointer;
+}
+#ghost{                
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    visibility: hidden;
+    cursor: pointer;
 }
